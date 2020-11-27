@@ -30,12 +30,6 @@ store.dispatch(
   })
 );
 
-setTimeout(() => {
-  store.dispatch(
-    sortByPassengers()
-  )
-}, 5000);
-
 store.subscribe(() => {
   console.log(store.getState());
   }
